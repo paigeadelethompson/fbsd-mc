@@ -1,0 +1,188 @@
+# BadlandsPlateau.bc - Biome configuration file for Badlands Plateau biome
+# Documentation: https://openterraingen.fandom.com/wiki/Biome_Configs
+
+# Basic Biome Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Basic_Biome_Settings
+TemplateForBiome: false
+BiomeDictTags: MESA, HOT, DRY, SPARSE, SANDY, PLATEAU
+BiomeCategory: mesa
+BiomeSize: 6
+BiomeRarity: 100
+IsleInBiome: Ocean
+BiomeSizeWhenIsle: 6
+BiomeRarityWhenIsle: 97
+BiomeIsBorder: 
+OnlyBorderNear: 
+NotBorderNear: 
+BiomeSizeWhenBorder: 8
+BiomeHeight: 3.5
+BiomeVolatility: 0.9
+SmoothRadius: 2
+CustomHeightControlSmoothRadius: 2
+MaxAverageHeight: 0.0
+MaxAverageDepth: 0.0
+Volatility1: 0.0
+Volatility2: 0.0
+VolatilityWeight1: 0.5
+VolatilityWeight2: 0.45
+DisableBiomeHeight: false
+
+# Custom Height Control
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Custom_Height_Control
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+CustomHeightControl: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+
+# River Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#River_Settings
+RiverBiome: River
+
+# Block Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Block_Settings
+StoneBlock: minecraft:red_sandstone
+SurfaceBlock: minecraft:red_sand
+GroundBlock: minecraft:red_sand
+UnderWaterSurfaceBlock: minecraft:red_sand
+SurfaceAndGroundControl: 
+ReplacedBlocks: None
+
+# Water Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Water_Settings
+UseWorldWaterLevel: true
+WaterLevelMax: 63
+WaterLevelMin: 0
+WaterBlock: minecraft:water
+IceBlock: minecraft:ice
+PackedIceBlock: minecraft:packed_ice
+SnowBlock: minecraft:snow_block
+CooledLavaBlock: minecraft:lava
+
+# Biome Temperature and Wetness
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Biome_Temperature_and_Wetness
+BiomeTemperature: 2.0
+UseFrozenOceanTemperature: false
+BiomeWetness: 0.0
+
+# Color Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Color_Settings
+WaterColorControl: 
+GrassColorControl: 
+GrassColorModifier: None
+FoliageColorControl: 
+
+# Visual Effects
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Visual_Effects
+FogDensity: 0.0
+ParticleType: minecraft:cloud
+ParticleProbability: 0.15
+
+# Sound Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Sound_Settings
+Music: 
+MusicMinDelay: 0
+MusicMaxDelay: 0
+ReplaceCurrentMusic: false
+AmbientSound: minecraft:ambient.cave
+MoodSound: minecraft:ambient.cave
+MoodSoundDelay: 6000
+MoodSearchRange: 8
+MoodOffset: 2.0
+AdditionsSound: 
+AdditionsTickChance: 0.0
+
+# Structure Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Structure_Settings
+StrongholdsEnabled: true
+WoodlandMansionsEnabled: false
+OceanMonumentsEnabled: false
+NetherFortressesEnabled: false
+VillageType: disabled
+VillageSize: 6
+MineshaftType: mesa
+MineshaftProbability: 0.004
+RareBuildingType: disabled
+BuriedTreasureEnabled: true
+BuriedTreasureProbability: 0.01
+ShipWreckEnabled: false
+ShipWreckBeachedEnabled: false
+PillagerOutpostEnabled: true
+PillagerOutpostSize: 7
+BastionRemnantEnabled: false
+BastionRemnantSize: 6
+NetherFossilEnabled: false
+EndCityEnabled: false
+RuinedPortalType: normal
+OceanRuinsType: disabled
+OceanRuinsLargeProbability: 0.3
+OceanRuinsClusterProbability: 0.9
+
+# Resource Queue
+# https://openterraingen.fandom.com/wiki/Resource_Queue
+# Ore Generation Settings
+# Coal - Common, large deposits
+Ore(minecraft:coal_ore,17,20,100.0,0,128,minecraft:red_sandstone)
+# Iron - Common, medium deposits
+Ore(minecraft:iron_ore,9,20,100.0,0,64,minecraft:red_sandstone)
+# Gold - Uncommon, medium deposits
+Ore(minecraft:gold_ore,9,4,100.0,0,32,minecraft:red_sandstone)
+# Redstone - Uncommon, small deposits
+Ore(minecraft:redstone_ore,8,8,100.0,0,16,minecraft:red_sandstone)
+# Diamond - Rare, small deposits
+Ore(minecraft:diamond_ore,8,2,100.0,0,16,minecraft:red_sandstone)
+# Lapis - Rare, small deposits
+Ore(minecraft:lapis_ore,7,2,100.0,0,32,minecraft:red_sandstone)
+# Emerald - Very rare, small deposits
+Ore(minecraft:emerald_ore,1,1,100.0,0,32,minecraft:red_sandstone)
+# Copper - Common, medium deposits
+Ore(minecraft:copper_ore,9,16,100.0,0,64,minecraft:red_sandstone)
+
+# Deepslate variants
+Ore(minecraft:deepslate_coal_ore,17,20,100.0,0,128,minecraft:deepslate)
+Ore(minecraft:deepslate_iron_ore,9,20,100.0,0,64,minecraft:deepslate)
+Ore(minecraft:deepslate_gold_ore,9,4,100.0,0,32,minecraft:deepslate)
+Ore(minecraft:deepslate_redstone_ore,8,8,100.0,0,16,minecraft:deepslate)
+Ore(minecraft:deepslate_diamond_ore,8,2,100.0,0,16,minecraft:deepslate)
+Ore(minecraft:deepslate_lapis_ore,7,2,100.0,0,32,minecraft:deepslate)
+Ore(minecraft:deepslate_emerald_ore,1,1,100.0,0,32,minecraft:deepslate)
+Ore(minecraft:deepslate_copper_ore,9,16,100.0,0,64,minecraft:deepslate)
+
+# Mob Spawn Settings
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Mob_Spawn_Settings
+# Format: SpawnMonsters: [mob,weight,minGroup,maxGroup]
+SpawnMonsters: [minecraft:zombie,100,4,4]
+SpawnMonsters: [minecraft:zombie_villager,25,1,1]
+SpawnMonsters: [minecraft:skeleton,100,4,4]
+SpawnMonsters: [minecraft:spider,100,4,4]
+SpawnMonsters: [minecraft:creeper,100,4,4]
+SpawnMonsters: [minecraft:slime,100,4,4]
+SpawnMonsters: [minecraft:enderman,10,1,4]
+SpawnMonsters: [minecraft:witch,5,1,1]
+
+# Format: SpawnCreatures: [mob,weight,minGroup,maxGroup]
+SpawnCreatures: [minecraft:sheep,12,4,4]
+SpawnCreatures: [minecraft:pig,10,4,4]
+SpawnCreatures: [minecraft:chicken,10,4,4]
+SpawnCreatures: [minecraft:cow,8,4,4]
+SpawnCreatures: [minecraft:horse,20,2,6]
+SpawnCreatures: [minecraft:donkey,1,1,3]
+SpawnCreatures: [minecraft:llama,8,4,4]
+
+# Format: SpawnWaterCreatures: [mob,weight,minGroup,maxGroup]
+SpawnWaterCreatures: [minecraft:squid,10,4,4]
+
+# Format: SpawnAmbientCreatures: [mob,weight,minGroup,maxGroup]
+SpawnAmbientCreatures: [minecraft:bat,10,8,8]
+
+# Format: SpawnWaterAmbientCreatures: [mob,weight,minGroup,maxGroup]
+SpawnWaterAmbientCreatures: [minecraft:cod,15,3,6]
+SpawnWaterAmbientCreatures: [minecraft:salmon,15,3,6]
+
+# Format: SpawnMiscCreatures: [mob,weight,minGroup,maxGroup]
+SpawnMiscCreatures: [minecraft:bat,10,8,8]
+
+# Mob Inheritance
+# https://openterraingen.fandom.com/wiki/Biome_Configs#Mob_Inheritance
+InheritMobsBiomeName: 

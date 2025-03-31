@@ -1,0 +1,3 @@
+worlds:
+  GravelPit:
+    generator: OpenTerrainGenerator:GravelPit 
