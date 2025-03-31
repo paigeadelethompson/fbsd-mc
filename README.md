@@ -21,12 +21,27 @@ sudo podman build -t freebsd/minecraft -t freebsd/minecraft:1.16.5 .
 
 ## Running the Server
 
-To run the Minecraft server:
+To run the server with persistent storage:
+
 ```bash
-sudo podman run -it --rm -p 25565:25565 localhost/freebsd/minecraft
+sudo podman run -it --rm \
+  -p 25565:25565 \
+  -v /storage/GravelPit:/minecraft/GravelPit \
+  -v /storage/GravelPit_the_end:/minecraft/GravelPit_the_end \
+  -v /storage/GravelPit_nether:/minecraft/GravelPit_nether \
+  -v /storage/GravelPit_logs:/minecraft/logs \
+  -v /storage/GravelPit_cache:/minecraft/cache \
+  localhost/freebsd/minecraft
 ```
 
-The server will be accessible on port 25565.
+This command:
+- Maps the Minecraft server port (25565)
+- Creates persistent storage for:
+  - Main world data (/storage/GravelPit)
+  - End dimension (/storage/GravelPit_the_end)
+  - Nether dimension (/storage/GravelPit_nether)
+  - Server logs (/storage/GravelPit_logs)
+  - Cache files (/storage/GravelPit_cache)
 
 ## Configuration
 

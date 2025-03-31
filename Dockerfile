@@ -29,8 +29,8 @@ RUN if [ "$MINECRAFT_VERSION" = "1.12.2" ]; then \
         echo "PATH=$JAVA_HOME/bin:$PATH" >> /etc/profile; \
     fi
 
-# Create directories
-RUN mkdir -p /minecraft/plugins/OpenTerrainGenerator/worlds/GravelPit/WorldBiomes
+# Create base minecraft directory
+RUN mkdir -p /minecraft/plugins
 
 # Download Minecraft server jar based on version
 RUN if [ "$MINECRAFT_VERSION" = "1.12.2" ]; then \
@@ -47,15 +47,28 @@ RUN if [ "$MINECRAFT_VERSION" = "1.12.2" ]; then \
         wget -O /minecraft/plugins/OpenTerrainGenerator.jar https://www.openterraingenerator.org/Downloads/OpenTerrainGenerator-Paper-1.19-0.0.29.jar; \
     fi
 
-# Copy configurations
-COPY biomes/*.bc /minecraft/plugins/OpenTerrainGenerator/worlds/GravelPit/WorldBiomes/
-COPY WorldConfig.ini /minecraft/plugins/OpenTerrainGenerator/worlds/GravelPit/
-COPY bukkit.yml /minecraft/
-COPY server.properties /minecraft/
-COPY eula.txt /minecraft/
+# Copy minimal config files
+ADD minecraft/ /minecraft
+
+# Set permissions
+RUN chmod -R 755 /minecraft
 
 # Set working directory
 WORKDIR /minecraft
+
+# Create required directories
+RUN mkdir -p /minecraft/GravelPit_the_end \
+    /minecraft/cache \
+    /minecraft/GravelPit_nether \
+    /minecraft/GravelPit \
+    /minecraft/logs
+
+# Declare volumes
+VOLUME /minecraft/GravelPit_the_end
+VOLUME /minecraft/cache
+VOLUME /minecraft/GravelPit_nether
+VOLUME /minecraft/GravelPit
+VOLUME /minecraft/logs
 
 # Expose all necessary Minecraft ports
 EXPOSE 25565
