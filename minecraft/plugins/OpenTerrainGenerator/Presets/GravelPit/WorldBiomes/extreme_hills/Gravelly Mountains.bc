@@ -198,8 +198,9 @@ AdditionsTickChance: 0.0
 # Original: 33,10,100.0,0,255
 Ore(minecraft:dirt,33,15,100.0,0,255,minecraft:stone)
 
+# Extra gravel for Gravelly Mountains
 # Original: 33,8,100.0,0,255
-Ore(minecraft:gravel,33,30,100.0,0,255,minecraft:stone)  # Extra gravel for Gravelly Mountains
+Ore(minecraft:gravel,33,30,100.0,0,255,minecraft:stone)
 
 # Original: 33,10,100.0,0,79
 Ore(minecraft:granite,33,15,100.0,0,79,minecraft:stone)
