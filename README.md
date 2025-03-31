@@ -51,6 +51,16 @@ The server is configured with:
 - Custom biome configurations
 - WorldConfig.ini for OTG settings
 
+## Version Compatibility Notes
+
+This server runs on Minecraft 1.16.5, which has some important implications:
+- No raw copper or copper ore (added in 1.17)
+- No deepslate variants (added in 1.17)
+- No cave biomes (added in 1.18)
+- No ancient cities (added in 1.19)
+
+When editing biome configurations, ensure you only use blocks and features available in Minecraft 1.16.5.
+
 ## World Features
 
 ### Biome Groups and Geological Features
@@ -78,6 +88,7 @@ The world is divided into distinct biome groups, each with unique geological and
   - **Swamp Deposits**: 
     - Unique mineral formations in waterlogged terrain
     - Special ore concentrations in anaerobic conditions
+    - Enhanced coal formation from organic material
   - **Warm Ocean Floor**: 
     - Rich coral and sedimentary deposits
     - Unique underwater cave formations
@@ -152,11 +163,12 @@ The world is divided into distinct biome groups, each with unique geological and
       - Rich gold veins throughout terrain
       - Primary deposits (Y=0 to Y=60)
       - Secondary enrichment zones (Y=30 to Y=70)
-      - Abundant copper deposits
+      - Abundant redstone deposits
     - Formation Characteristics:
       - Ancient hydrothermal activity
       - Multiple mineralization phases
       - Unique layering patterns
+      - Rich in gold and redstone
   - **Desert**: 
     - Exposed mineral seams
     - Wind-carved cave systems
@@ -189,12 +201,22 @@ The world is divided into distinct biome groups, each with unique geological and
 #### Cold Zones (Fourth Priority, 40 Rarity)
 - **Primary Biomes**: Mountains, Taigas, Cold Oceans
 - **Geological Features**:
-  - **Mountains**:
-    - Rich iron deposits
-    - Complex cave systems
-    - Exposed mineral veins
-  - **Taiga**: Moderate ore distribution
-  - **Cold Ocean**: Unique deep-sea formations
+  - **Taiga Regions**:
+    - Enhanced mineral preservation due to cold climate
+    - High coal content (25-30 veins/chunk)
+    - Increased iron deposits (25 veins/chunk)
+    - Moderate precious metal concentration
+  - **Snowy Taiga**:
+    - Superior mineral preservation
+    - Highest coal concentration (30 veins/chunk)
+    - Rich iron deposits (30 veins/chunk)
+    - Enhanced precious metal deposits
+  - **Ice Spikes**:
+    - Unique glacial mineral concentration
+    - Maximum iron content (35 veins/chunk)
+    - Rich precious metal deposits (5 gold veins/chunk)
+    - Enhanced rare mineral preservation
+    - Extensive gravel deposits from glacial action
 - **Config Files**:
   - Mountain Variants:
     - `extreme_hills/Mountains.bc`
@@ -215,12 +237,32 @@ The world is divided into distinct biome groups, each with unique geological and
     - `ocean/Cold Ocean.bc`
     - `ocean/Deep Cold Ocean.bc`
 
+#### Coastal Zones
+- **Primary Biomes**: Beaches, Stone Shores, Snowy Beaches
+- **Geological Features**:
+  - **Stone Shores**:
+    - Exposed mineral veins
+    - High igneous rock content
+    - Enhanced iron deposits (30 veins/chunk)
+    - Moderate precious metal concentration
+  - **Regular Beaches**:
+    - Extensive sedimentary deposits
+    - Maximum gravel concentration (30 veins/chunk)
+    - Placer gold deposits
+    - Reduced igneous rock presence
+  - **Snowy Beaches**:
+    - Well-preserved mineral deposits
+    - High precious metal content
+    - Enhanced iron concentration
+    - Significant glacial gravel deposits
+
 #### Arctic Zones (Fifth Priority, 20 Rarity)
 - **Primary Biomes**: Snowy Plains, Frozen Oceans, Ice Spikes
 - **Geological Features**:
   - Preserved mineral deposits under ice sheets
   - Unique ice spike formations
   - Frozen cave systems
+  - Enhanced mineral concentration from glacial activity
 - **Config Files**:
   - Snow Variants:
     - `snowy_plains/Snowy Plains.bc`
@@ -252,8 +294,15 @@ Each biome group creates distinct gameplay experiences through its unique combin
 Mining Strategies by Region:
 - Hot Zones: Focus on diamond and emerald hunting in appropriate terrain types
 - Moderate Zones: Extensive coal mining operations in forests
-- Dry Zones: Gold and copper extraction in badlands
-- Cold Zones: Iron mining in mountains
+- Dry Zones: Rich gold deposits in badlands, focus on hydrothermal formations
+- Cold Zones: 
+  - Taiga: Focus on coal and iron extraction
+  - Ice Spikes: Premium location for iron and precious metals
+  - Snowy Taiga: Balanced mining of all resources
+- Coastal Zones:
+  - Stone Shores: Focus on exposed mineral veins
+  - Beaches: Placer deposit mining
+  - Snowy Beaches: Combined glacial and coastal deposit extraction
 - Arctic Zones: Deep mining under ice sheets
 - Ancient Mycelium Realms: Unique ore formations in isolated environments
 
