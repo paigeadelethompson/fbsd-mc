@@ -290,11 +290,11 @@ OceanRuinsClusterProbability: 0.9
 
 SpawnMonsters: []
 
-SpawnCreatures: []
+SpawnCreatures: [{"mob": "minecraft:mooshroom", "weight": 8, "min": 4, "max": 8}]
 
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "minecraft:squid", "weight": 10, "min": 4, "max": 4}]
 
-SpawnAmbientCreatures: []
+SpawnAmbientCreatures: [{"mob": "minecraft:bat", "weight": 10, "min": 8, "max": 8}]
 
 SpawnWaterAmbientCreatures: []
 

@@ -56,4 +56,18 @@ SmallLake(minecraft:water,4,7.0,8,119)
 SmallLake(minecraft:lava,2,1.0,8,119)
 
 # Original: 2,8.0,6,50
-SmallLake(minecraft:lava,2,8.0,6,50) 
+SmallLake(minecraft:lava,2,8.0,6,50)
+
+SpawnMonsters: [{"mob": "minecraft:spider", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:zombie", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:skeleton", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:creeper", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:slime", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "minecraft:witch", "weight": 5, "min": 1, "max": 1}]
+
+SpawnCreatures: [{"mob": "minecraft:sheep", "weight": 12, "min": 4, "max": 4}, {"mob": "minecraft:pig", "weight": 10, "min": 4, "max": 4}, {"mob": "minecraft:chicken", "weight": 10, "min": 4, "max": 4}, {"mob": "minecraft:cow", "weight": 8, "min": 4, "max": 4}, {"mob": "minecraft:wolf", "weight": 8, "min": 4, "max": 4}, {"mob": "minecraft:rabbit", "weight": 4, "min": 2, "max": 3}, {"mob": "minecraft:fox", "weight": 8, "min": 2, "max": 4}]
+
+SpawnWaterCreatures: [{"mob": "minecraft:squid", "weight": 10, "min": 4, "max": 4}]
+
+SpawnAmbientCreatures: [{"mob": "minecraft:bat", "weight": 10, "min": 8, "max": 8}]
+
+SpawnWaterAmbientCreatures: [{"mob": "minecraft:cod", "weight": 15, "min": 3, "max": 6}, {"mob": "minecraft:salmon", "weight": 15, "min": 1, "max": 5}]
+
+SpawnMiscCreatures: []
+
+InheritMobsBiomeName: minecraft:taiga_mountains 

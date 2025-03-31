@@ -289,15 +289,15 @@ OceanRuinsClusterProbability: 0.9
 # +-----------------------------------------------------------------+ #
 #######################################################################
 
-SpawnMonsters: []
+SpawnMonsters: [{"mob": "minecraft:drowned", "weight": 5, "min": 1, "max": 1}, {"mob": "minecraft:spider", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:zombie", "weight": 95, "min": 4, "max": 4}, {"mob": "minecraft:zombie_villager", "weight": 5, "min": 1, "max": 1}, {"mob": "minecraft:skeleton", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:creeper", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:slime", "weight": 100, "min": 4, "max": 4}, {"mob": "minecraft:enderman", "weight": 10, "min": 1, "max": 4}, {"mob": "minecraft:witch", "weight": 5, "min": 1, "max": 1}]
 
 SpawnCreatures: []
 
-SpawnWaterCreatures: []
+SpawnWaterCreatures: [{"mob": "minecraft:squid", "weight": 3, "min": 1, "max": 4}, {"mob": "minecraft:dolphin", "weight": 1, "min": 1, "max": 2}]
 
 SpawnAmbientCreatures: []
 
-SpawnWaterAmbientCreatures: []
+SpawnWaterAmbientCreatures: [{"mob": "minecraft:cod", "weight": 15, "min": 3, "max": 6}]
 
 SpawnMiscCreatures: []
 
