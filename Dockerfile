@@ -4,11 +4,14 @@ FROM ghcr.io/freebsd/freebsd-runtime:15.0
 # Define build argument for version
 ARG MINECRAFT_VERSION=1.16.5
 
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+
 # Bootstrap and install pkg
 RUN /bin/sh -c 'pkg bootstrap -y && pkg update && pkg upgrade -y'
 
 # Install wget
-RUN pkg install -y wget
+RUN pkg install -y wget libiconv
 
 # Install appropriate Java version based on Minecraft version
 RUN if [ "$MINECRAFT_VERSION" = "1.12.2" ]; then \
@@ -80,4 +83,4 @@ EXPOSE 19133
 RUN . /etc/profile
 
 # Set entrypoint
-ENTRYPOINT ["/bin/sh", "-c", "java -jar /minecraft/minecraft.jar nogui"] 
+ENTRYPOINT ["/bin/sh", "-c", "/usr/local/openjdk11/bin/java -jar /minecraft/minecraft.jar nogui"] 
