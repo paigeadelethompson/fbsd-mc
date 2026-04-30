@@ -1,5 +1,5 @@
 # Use the imported FreeBSD base image
-FROM localhost/freebsd
+FROM ghcr.io/freebsd/freebsd-runtime:15.0
 
 # Define build argument for version
 ARG MINECRAFT_VERSION=1.16.5
@@ -38,7 +38,7 @@ RUN if [ "$MINECRAFT_VERSION" = "1.12.2" ]; then \
         wget -O /minecraft/plugins/OpenTerrainGenerator.jar https://www.openterraingenerator.org/Downloads/OpenTerrainGenerator-1.12.2-v9.4.jar; \
     elif [ "$MINECRAFT_VERSION" = "1.16.5" ]; then \
         wget -O /minecraft/minecraft.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar && \
-        wget -O /minecraft/plugins/OpenTerrainGenerator.jar https://www.openterraingenerator.org/Downloads/OpenTerrainGenerator-1.16.5-0.1.10.jar; \
+        wget -O /minecraft/plugins/OpenTerrainGenerator.jar https://mediafilez.forgecdn.net/files/3570/875/OpenTerrainGenerator-1.16.5-0.1.10.jar; \
     elif [ "$MINECRAFT_VERSION" = "1.18.2" ]; then \
         wget -O /minecraft/minecraft.jar https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/388/downloads/paper-1.18.2-388.jar && \
         wget -O /minecraft/plugins/OpenTerrainGenerator.jar https://www.openterraingenerator.org/Downloads/OpenTerrainGenerator-Paper-1.18.2-0.0.29.jar; \
